@@ -1,0 +1,105 @@
+.login {
+  #active {
+    display: block;
+  }
+  #disable {
+    display: none;
+  }
+  .mainSection {
+    height: 70vh;
+    .forgotCard {
+      min-height: 300px !important;
+    }
+    .card {
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #f4f4f4;
+      box-shadow: 0 1px 6px 0 rgba(5, 16, 44, 0.18);
+      border-radius: 10px;
+      .cardContent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .forgotPassword {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          background: unset;
+          border: none;
+          cursor: pointer;
+          font-weight: 500;
+          color: var(--secondary-color-500);
+          width: 120px;
+        }
+        button:hover {
+          transition: 200ms;
+          color: var(--primary-color-400);
+        }
+      }
+      svg {
+        font-size: 25px;
+        color: var(--primary-color);
+        padding-right: 10px;
+      }
+      h3,
+      a {
+        color: var(--secondary-color-500);
+        transition: 200ms;
+      }
+      a:hover {
+        transition: 200ms;
+        color: #6ccead;
+      }
+      input {
+        font-size: 16px;
+      }
+    }
+  }
+  .donerAccess {
+    img {
+      width: 100%;
+    }
+    a {
+      background-color: var(--secondary-color-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 10px 30px;
+      border: none;
+      transition: 200ms;
+    }
+    a:hover {
+      background-color: #6ccead;
+      transition: 200ms;
+      color: #fff;
+    }
+  }
+  .forgot-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  .forgot-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .forgot-exit {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  .forgot-exit-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+}

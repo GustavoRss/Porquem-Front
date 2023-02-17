@@ -1,0 +1,119 @@
+.mainSection {
+  flex: 1;
+  height: auto;
+  display: flex;
+  margin-top: 4rem;
+
+  .textLeftContent {
+    width: 80%;
+    h3 {
+      font-size: 20px;
+      font-weight: initial;
+      color: #4e6888;
+      letter-spacing: -0.02em;
+    }
+    span {
+      color: #56da9e;
+    }
+  }
+
+  .rightContent {
+    display: flex;
+    flex: 50% 1;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      max-width: 980px;
+    }
+  }
+}
+.donorSection {
+  display: flex;
+  padding-top: 240px;
+  padding-block-start: clamp(160px, 26vw, 218px);
+
+  img {
+    width: 80%;
+  }
+}
+
+.institutionSection {
+  display: flex;
+  padding-top: 240px;
+  padding-block-start: clamp(160px, 26vw, 218px);
+  img {
+    width: 100%;
+  }
+}
+
+.contactSection {
+  display: flex;
+  padding-top: 240px;
+  padding-block-start: clamp(160px, 26vw, 218px);
+  img {
+    width: 100%;
+  }
+}
+
+.listCard {
+  width: 328px;
+  height: 600px;
+  margin: 20px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px 0 rgb(5 16 44 / 5%);
+  background: #fff;
+  color: black;
+  .listCardContent {
+    margin: 0px 30px 30px 30px;
+  }
+  span {
+    background-color: var(--primary-color-300);
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+    border-top-left-radius: calc(1rem - 1px);
+    border-top-right-radius: calc(1rem - 1px);
+    max-height: 200px;
+    object-fit: cover;
+  }
+  p {
+    font-size: 12px;
+  }
+  b {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  div {
+    margin: 8px 0px;
+  }
+  h3 {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+
+.listCard:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 30px 0 rgb(5 16 44 / 15%);
+}
+
+// RESPONSIVIDADE 1620, 1280, 768, 480, 320
+
+@media only screen and (max-width: 1620px) {
+  .textLeftContent {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

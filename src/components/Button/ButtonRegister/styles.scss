@@ -1,0 +1,24 @@
+.Navbar {
+  .buttonRegister {
+    a {
+      background-color: #404040;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border-radius: 5px;
+      color: #fff;
+      white-space: nowrap;
+      font-weight: 400;
+      margin: 0rem 3rem 0rem 3rem;
+      cursor: pointer;
+      padding: 10px 15px;
+    }
+
+    a:hover {
+      background-color: #6ccead;
+      transition: 200ms;
+      color: #fff;
+    }
+  }
+}

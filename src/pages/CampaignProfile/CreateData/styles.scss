@@ -1,0 +1,151 @@
+.createCampaign {
+  background-color: #445b780d;
+  h3,
+  h4,
+  a {
+    color: var(--secondary-color-500);
+    transition: 200ms;
+  }
+
+  .campaignImage {
+    border-radius: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 10px 20px 0 rgb(5 16 44 / 15%);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-height: 200px;
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  }
+  .wallpaperImage {
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 10px 20px 0 rgb(5 16 44 / 15%);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .leftColumn {
+    border-right: 1px solid rgb(212, 212, 212);
+    .errorMessage {
+      font-weight: 600;
+      svg {
+        padding-right: 10px;
+      }
+    }
+  }
+  .card {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 6px 0 rgba(5, 16, 44, 0.18);
+    border-radius: 10px;
+    input {
+      font-size: 16px;
+      width: 100%;
+    }
+    small {
+      color: rgb(157 157 157);
+      font-weight: 600;
+    }
+  }
+}
+
+.editor {
+  em {
+    font-style: italic;
+    font-weight: unset;
+    font-size: unset;
+    color: unset;
+  }
+  li {
+    font-size: 14px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000 !important;
+  }
+  .ql-editor {
+    height: 157px;
+    resize: none;
+  }
+  .ql-editor.ql-blank::before {
+    color: rgb(158, 158, 158);
+    content: attr(data-placeholder);
+    font-style: normal;
+    left: 15px;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    font-weight: 500;
+    font-size: larger;
+  }
+}
+
+.rmsc .dropdown-container {
+  border: unset !important;
+}
+.dropdown-heading {
+  border: 1px solid #a3a3a382;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.dropdown-heading:focus {
+  border: 2px solid var(--primary-color-300);
+  outline: 0 none;
+}
+.originSelect {
+  width: 100%;
+  input[type="checkbox"] {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    padding: auto;
+  }
+  .dropdown-content {
+    label.select-item {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    div.item-renderer {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+
+      input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.Navbar {
+  background-color: #ffff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+
+  .NavContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .links {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      height: 100%;
+      width: 100%;
+    }
+    img {
+      max-width: 150px;
+      margin-left: 3rem;
+    }
+  }
+
+  .leftSide {
+    flex: 50% 1;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    a {
+      cursor: pointer;
+      margin-left: 10%;
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    align-items: center;
+  }
+  button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #445b78;
+    font-size: 17px;
+  }
+  a:hover {
+    color: #000;
+    transition: 200ms;
+  }
+}
+
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .Navbar .NavContent a {
+    font-size: 15px;
+  }
+  .Navbar .NavContent img {
+    max-width: 120px;
+  }
+  .Navbar .rightSide a {
+    font-size: 15px;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Navbar button {
+    display: flex;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  .Navbar .NavContent #hidden {
+    display: none;
+  }
+
+  .Navbar .NavContent #active {
+    margin: unset;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+  }
+
+  #active .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  #active .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .Navbar .NavContent #active a {
+    margin: 10px;
+    color: white;
+    padding: 10px;
+  }
+
+  .menuTogle {
+    flex: 50% 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+// CSS TRANSITIONS
+.my-node-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.my-node-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.my-menu-enter {
+  transform: scale(0.9);
+  transform: rotate(30deg);
+}
+.my-menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.my-menu-exit {
+  opacity: 1;
+}
+.my-menu-exit-active {
+  transition: opacity 300ms, transform 300ms;
+}

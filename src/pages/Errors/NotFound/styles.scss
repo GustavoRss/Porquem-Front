@@ -1,0 +1,14 @@
+.notFound {
+  .mainSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    img {
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
+}

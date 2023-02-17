@@ -1,0 +1,30 @@
+.footerMain {
+  display: flex;
+  z-index: -1;
+  padding-top: 240px;
+  padding-block-start: clamp(160px, 26vw, 218px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  footer {
+    width: 100%;
+    height: 3rem;
+    background-color: #56da9e;
+    .container {
+      color: white;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 100%;
+      a {
+        font-size: 24px;
+        padding-left: 10px;
+        color: #ffffff;
+      }
+      a svg:hover {
+        transition: 200ms;
+        color: #344357;
+      }
+    }
+  }
+}

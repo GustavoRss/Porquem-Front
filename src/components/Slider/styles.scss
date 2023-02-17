@@ -1,0 +1,69 @@
+.slider {
+  .listCard {
+    width: 90%;
+    position: relative;
+
+    img {
+      height: 250px;
+      max-height: unset;
+    }
+  }
+
+  .mainCardsTitle {
+    color: #000;
+    span {
+      color: var(--primary-color);
+      font-size: 16px;
+    }
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 88%;
+    right: 30%;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 88%;
+    left: 58%;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .slide.active {
+    opacity: 1;
+    display: flex;
+    transition-duration: 600ms;
+    transform: scale(1);
+    padding-right: 5rem;
+  }
+  #cardBackground {
+    position: absolute;
+  }
+  #plant1 {
+    position: absolute;
+  }
+  #plant2 {
+    position: absolute;
+  }
+  #plant3 {
+    position: absolute;
+  }
+  #plant4 {
+    position: absolute;
+  }
+}
