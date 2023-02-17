@@ -25,7 +25,3 @@ To get a demo of the complete application, access: [here](https://www.linkedin.c
 We welcome contributions to this project. If you'd like to contribute, please fork the repository and create a new branch for your changes.
 
 When you're ready to submit your changes, create a pull request and we'll review your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
